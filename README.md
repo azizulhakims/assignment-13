@@ -1,66 +1,36 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Assignment-13
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Part 1 : Laravel Installation
 
-## About Laravel
+Here I install Laravel first step I just go Laravel official document and see here installation guide with composer global requirement below I share screen short
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Here I run -- composer global require laravel/installer
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+2nd: code I run “laravel new assignment-13”
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+3.  than in run -- “cd assignment-13”
 
-## Learning Laravel
+4.  than -- “run php artisan serve”
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+5) than come in browser below I share screen short
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Part 2: Laravel Folder Structure.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+1. app: This folder contains the core application code. It includes models, controllers, and other classes specific to your application's business logic. The app/Http subfolder contains the controllers and middleware for handling HTTP requests.
 
-## Laravel Sponsors
+2. bootstrap: The bootstrap folder contains files that are responsible for bootstrapping the Laravel framework. It includes files like app.php that load the necessary components and configure the application.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+3) config: The config folder contains various configuration files for your application. You can define settings for services, database connections, caching, logging, and more within these files.
 
-### Premium Partners
+4) database: This folder contains database-related files. It includes migrations, which are used to manage database schema changes, and seeders, which are used to populate the database with initial data.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+5) public: The public folder is the document root for your Laravel application. It contains the index.php file, which serves as the entry point for all requests to your application. Additionally, you can place your assets (CSS, JavaScript, images) in this folder.
 
-## Contributing
+6) resources: The resources folder contains various resources that are used by your application. It includes subfolders such as views for storing Blade templates, lang for language files, and assets for uncompiled CSS and JavaScript.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+7) routes: The routes folder contains the route definition files for your application. It includes web.php for defining web routes, api.php for defining API routes, and console.php for defining console (command-line) routes.
+8) storage: This folder contains files generated by your application, such as logs, cached views, and session files. It has subfolders like app for storing application-specific files, framework for framework-generated files, and logs for log files.
 
-## Code of Conduct
+9) tests: The tests folder is where you can write automated tests for your application. It includes subfolders such as Feature and Unit for organizing different types of tests.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+10. vendor: The vendor folder contains all the dependencies installed via Composer, including the Laravel framework itself. It is generated and managed by Composer, and you typically don't need to modify its contents.
